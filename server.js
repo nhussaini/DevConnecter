@@ -6,6 +6,11 @@ const app = express();
 //connect Database
 connectDB();
 
+//init MiddleWare
+//before, we needed to install body parser, but now it is included inside ex
+// app.use(bodyParser.json());
+app.use(express.json({ extended: false }));
+
 app.get('/', (req,res) => res.send("API Running"));
 
 //Define Routes
