@@ -14,10 +14,6 @@ const User = require("../../models/User");
 // @desc     Register User
 // @access   Public
 
-// router.get('/', (req,res) => {
-//   res.send('User Route')
-// });
-
 router.post(
   "/",
   [
