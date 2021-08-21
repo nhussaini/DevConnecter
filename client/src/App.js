@@ -1,9 +1,12 @@
 import "./App.css";
+import Navbar from "./components/layout/Navbar";
+import Landing from "./components/layout/Landing";
 
 const App = () => {
   return (
-    <div className="App">
-      <h1>App</h1>
+    <div>
+      <Navbar />
+      <Landing />
     </div>
   );
 };
